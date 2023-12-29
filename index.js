@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 
 app.get('/weather', async (req, res) => {
   try {
-    const apiKey = '47f19f22916f820c539ede4d14555cc9';
+    const apiKey = 'OpenWeatherMap Api Key';
     const city = req.query.city || 'Kavali';
 
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
